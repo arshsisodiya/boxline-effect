@@ -1,0 +1,103 @@
+/* CSS For box */
+body{
+   background: linear-gradient(to bottom right, #141e30 0%, #243b55 100%);
+  height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.div{
+  background: linear-gradient(to bottom right, #aa076b 0%, #61045f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 600px;
+}
+.txt {
+  padding: 20 20 20 20px;
+
+  font-family: "Ubuntu",sans-serif; sans-serif;
+  font-weight: bolder;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 1s;
+  color: #61045f;
+  font-size: 20px;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+
+.txt:hover {
+  color: #ff9966;
+  background: none;
+  box-shadow: none;
+  transition-delay: 2s;
+  transition: 2s;
+  cursor: hand;
+}
+
+.box boxline {
+  overflow: hidden;
+  position: absolute;
+  display: block;
+}
+
+.box boxline:nth-child(1) {
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3)
+}
+
+.box:hover boxline:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+.box boxline:nth-child(3) {
+  bottom: 0%;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.box:hover boxline:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.box boxline:nth-child(2) {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.box:hover boxline:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.box boxline:nth-child(4) {
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.box:hover boxline:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
